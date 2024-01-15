@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<title>Annual Mortality Rates in Palestine</title>
+<link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+/>
+<link
+	rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap"
+/>
+<link rel="stylesheet" href="style.css" />
+
+<body id="body" class="">
+	<div class="chart-container">
+		<svg width="960" height="500"></svg>
+		<a
+			id="link_button"
+			href="https://www.thepalestineacademy.com/"
+			target="_blank"
+		>
+			History of Palestine
+		</a>
+	</div>
+	<div id="footer">
+		From the river to the sea palestine will be free &nbsp;&nbsp; 🇵🇸
+	</div>
+	<div class="toggle-container" id="toggleDarkMode">
+		<label class="toggle-switch">
+			<input type="checkbox" />
+			<span class="toggle-slider" onclick="toggleDarkMode(event)"></span>
+		</label>
+		<label class="toggle-label">Dark Mode</label>
+	</div>
+	<script src="./libraries/d3.min.js"></script>
+	<script src="./script.js"></script>
+</body>

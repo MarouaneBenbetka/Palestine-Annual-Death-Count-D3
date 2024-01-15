@@ -1,0 +1,150 @@
+body.dark {
+	background-color: rgb(17, 16, 16);
+	color: #fff;
+}
+
+.dark #myyscale {
+	stroke: white;
+}
+
+.dark line {
+	stroke: white;
+}
+
+.dark.handle--custom {
+	color: white;
+	stroke: white;
+}
+
+.dark text {
+	fill: white;
+}
+
+body {
+	position: relative;
+	font-family: "Montserrat", sans-serif;
+
+	font-weight: 600;
+	overflow-x: auto;
+}
+.area {
+	fill: steelblue;
+	clip-path: url(#clip);
+}
+
+.zoom {
+	cursor: move;
+	fill: none;
+	pointer-events: all;
+}
+.chart-container {
+	width: 100%;
+	max-width: calc(max(1300px, 100vw));
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	font-weight: 40;
+	text-align: center;
+	font-size: 16px;
+}
+
+.tooltip-wrapper {
+	font-size: 12px;
+}
+
+.dark .tooltip-wrapper {
+	fill: black !important;
+}
+#link_button {
+	margin-top: 10px;
+	padding: 6px 12px;
+	background-color: #b11f27;
+	color: white;
+	border-radius: 4px;
+	border: 1px solid #b11f27;
+	transition: 0.3s;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+#link_button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: #b11f27;
+}
+#toggleDarkMode {
+	/* padding: 10px;
+				cursor: pointer;
+				background-color: #888888;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				outline: none;
+				margin-bottom: 10px; */
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#toggleButton.active .toggle-slider,
+#toggleDarkMode.active .toggle-slider {
+	background-color: #2196f3;
+}
+#toggleButton.active .toggle-slider:before,
+#toggleDarkMode.active .toggle-slider:before {
+	transform: translateX(22px);
+}
+
+.toggle-container {
+	display: flex;
+	align-items: center;
+}
+
+.toggle-label {
+	margin-left: 10px;
+}
+.dark .toggle-label {
+	color: white;
+}
+
+.toggle-switch {
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	height: 24px;
+}
+
+.toggle-slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	border-radius: 34px;
+	transition: 0.4s;
+}
+
+.toggle-slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 4px;
+	bottom: 3px;
+	background-color: white;
+	border-radius: 50%;
+	transition: 0.4s;
+}
+
+.dark .tooltip-text-line {
+	color: black !important;
+}
