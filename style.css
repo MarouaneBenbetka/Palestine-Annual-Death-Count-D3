@@ -151,3 +151,33 @@ svg {
 .dark .tooltip-text-line {
 	color: black !important;
 }
+
+.color-key {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.color-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	row-gap: 10px;
+}
+
+.color-box {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+	transition-delay: 0.2s;
+}
+
+.color-label {
+	display: inline-block;
+	vertical-align: middle;
+}
