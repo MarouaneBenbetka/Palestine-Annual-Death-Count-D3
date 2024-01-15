@@ -181,3 +181,22 @@ svg {
 	display: inline-block;
 	vertical-align: middle;
 }
+
+.feedback {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 8px;
+	background-color: #2ecc71;
+	color: white;
+	border-radius: 5px 0 0 0;
+	text-decoration: none;
+	transition: all;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.feedback:hover {
+	background-color: #27ae60;
+	scale: 0.95;
+}
