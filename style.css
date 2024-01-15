@@ -38,13 +38,16 @@ body {
 	pointer-events: all;
 }
 .chart-container {
-	width: 100%;
-	max-width: calc(max(1300px, 100vw));
+	min-width: calc(max(1000px, 100vw));
 	height: 700px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+svg {
+	max-width: calc(max(1400px, 100vw));
 }
 
 #footer {
