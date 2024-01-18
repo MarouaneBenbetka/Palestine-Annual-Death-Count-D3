@@ -38,7 +38,7 @@ body {
 	pointer-events: all;
 }
 .chart-container {
-	min-width: calc(max(1000px, 100vw));
+	min-width: calc(max(1000px, 90vw));
 	height: 700px;
 	display: flex;
 	justify-content: center;
@@ -199,4 +199,8 @@ svg {
 .feedback:hover {
 	background-color: #27ae60;
 	scale: 0.95;
+}
+
+.font-special {
+	font-family: Cambria Math, Symbola, Quivira, STIX, Code2000;
 }
