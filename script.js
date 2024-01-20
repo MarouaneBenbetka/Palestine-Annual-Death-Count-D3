@@ -170,9 +170,7 @@ var xAxisContext = d3
 	.tickFormat(d3.timeFormat("%Y"));
 
 // create the one y axis to be rendered
-var yAxisFocus = d3
-	.axisLeft(yFocus)
-	.tickFormat((d) => (d * maxYAxisValue) / 100);
+var yAxisFocus = d3.axisLeft(yFocus).tickFormat((d) => d);
 
 // build brush
 var brush = d3
