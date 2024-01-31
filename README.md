@@ -10,7 +10,7 @@ This data visualization project utilizes D3.js to create an interactive multi-li
 
 ![alt text](./images/dark-mode.png)
 
-## White Mode :
+## Light Mode :
 
 ![alt text](./images/white-mode.png)
 
